@@ -131,7 +131,7 @@ li {
 	position: relative;
 	font-size: 50px;
 	transition: color 0.5s ease, font-size 0.2s ease;
-	color: black;
+	color: #24292e;
 }
 
 .overlay i:hover {
