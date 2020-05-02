@@ -1,4 +1,4 @@
-if (window.matchMedia("(min-width: 400px)").matches) {
+if (window.matchMedia("(min-width: 480px)").matches) {
 $(function() {
 
  $(window).scroll(function() {
