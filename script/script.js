@@ -1,5 +1,4 @@
-var mql = window.matchMedia('all and (max-width: 480px)');
-if (mql.matches) {
+if($(window).width() > 480) {
 $(function() {
 
  $(window).scroll(function() {
@@ -115,8 +114,6 @@ $(function() {
 	});
 });
 
-}
-else {
 $(function() {
 	$('#prog-1').mouseover(function() 
 	{
@@ -199,4 +196,8 @@ $(function() {
 	});
 
 });
+
+}
+else {
+
 }
