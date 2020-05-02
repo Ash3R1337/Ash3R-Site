@@ -19,7 +19,6 @@ body {
 	overflow-x: hidden;
 
 	-webkit-font-smoothing: antialiased;
-	-webkit-overflow-scrolling: touch;
 }
 
 li {
@@ -56,7 +55,7 @@ li {
 	width: 255px;
 	height: 110px;
 	background-color: #171515;
-	z-index: 100;
+	z-index: 200;
 	top: 3px;
 	display: none;
 	padding: 47px 20px;
@@ -80,7 +79,7 @@ li {
 .arrows {
 	position: fixed;
 	z-index: 100;
-	right: 0;
+	right: 10px;
 
 }
 
@@ -108,7 +107,7 @@ li {
 
 .overlay img {
 	position: absolute;
-	min-width: 100%; 
+	max-width: 100%; 
 	height: 800px;
 	opacity: 50%;
 }
@@ -155,6 +154,7 @@ li {
 	margin-top: 500px;
 	font-size: 75px;
 	letter-spacing: 5px;
+	left: 10px;
 }
 
 
@@ -185,7 +185,7 @@ section .about {
 	width: 2px;
 	height: 400px;
 	position: absolute;
-	z-index: none;
+	display: none;
 }
 
 .soc-about {
@@ -195,7 +195,7 @@ section .about {
 .soc-about h5 {
 	position: relative;
 	line-height: 20px;
-	font-size: 17px;
+	font-size: 20px;
 	font-weight: 550;
 }
 
@@ -222,10 +222,11 @@ section .about {
 
 .describe p {
 	position: relative;
-    margin-top: 2px;
+    margin-top: 1px;
     font-family: 'Raleway', sans-serif;
     font-size: 19px;
-    left: 150px;
+    margin-left: -10px;
+    text-align: left;
 }
 
 .describe .text {
@@ -278,10 +279,10 @@ section .services-block {
     z-index: 1; /* Отображаем подсказку поверх других элементов */
     background: rgba(255,255,230,0.9); /* Полупрозрачный цвет фона */
     font-family: 'Raleway', sans-serif;
-    font-size: 13px; /* Размер текста подсказки */
+    font-size: 18px; /* Размер текста подсказки */
     padding: 5px 10px; /* Поля */
     border: 2px double #FF2828;
-    right: 0px;
+    left: 15px;
    }
 
 .deve .text-block h3 {
@@ -454,7 +455,7 @@ section .works-block {
 }
 
 #prog-1-1 {
-	margin-left: 112px;
+	margin-left: 170px;
 	margin-top: 180px;
 	position: absolute;
 	display: none;
@@ -463,10 +464,11 @@ section .works-block {
 	box-shadow: 0 0 20px 20px white;
 	color: #E58201;
 	font-weight: 900;
+	z-index: 2;
 }
 
 #prog-1-2 {
-	margin-left: 105px;
+	margin-left: 170px;
 	margin-top: 450px;
 	position: absolute;
 	display: none;
@@ -475,11 +477,12 @@ section .works-block {
 	box-shadow: 0 0 20px 20px white;
 	color: #E58201;
 	font-weight: 900;
+	z-index: 2;
 }
 
 #prog-1-3 {
-	right: 575px;
-	margin-top: 180px;
+	margin-left: 100px;
+	margin-top: 550px;
 	position: absolute;
 	display: none;
 	border-radius: 80px;
@@ -487,11 +490,12 @@ section .works-block {
 	box-shadow: 0 0 20px 20px white;
 	color: #E58201;
 	font-weight: 900;
+	z-index: 2;
 }
 
 #prog-1-4 {
-	right: 305px;
-	margin-top: 180px;
+	margin-left: 170px;
+	margin-top: 500px;
 	position: absolute;
 	display: none;
 	border-radius: 80px;
@@ -499,11 +503,12 @@ section .works-block {
 	box-shadow: 0 0 20px 20px white;
 	color: #E58201;
 	font-weight: 900;
+	z-index: 2;
 }
 
 #prog-1-5 {
-	margin-left: 320px;
-	margin-top: 450px;
+	margin-left: 170px;
+	margin-top: 500px;
 	position: absolute;
 	display: none;
 	border-radius: 80px;
@@ -511,11 +516,12 @@ section .works-block {
 	box-shadow: 0 0 20px 20px white;
 	color: #E58201;
 	font-weight: 900;
+	z-index: 2;
 }
 
 #prog-1-6 {
-	margin-left: 589px;
-	margin-top: 450px;
+	margin-left: 170px;
+	margin-top: 500px;
 	position: absolute;
 	display: none;
 	border-radius: 80px;
@@ -523,11 +529,12 @@ section .works-block {
 	box-shadow: 0 0 20px 20px white;
 	color: #E58201;
 	font-weight: 900;
+	z-index: 2;
 }
 
 #prog-1-7 {
-	right: 575px;
-	margin-top: 450px;
+	margin-left: 170px;
+	margin-top: 500px;
 	position: absolute;
 	display: none;
 	border-radius: 80px;
@@ -535,10 +542,11 @@ section .works-block {
 	box-shadow: 0 0 20px 20px white;
 	color: #E58201;
 	font-weight: 900;
+	z-index: 2;
 }
 
 #prog-1-8 {
-	right: 305px;
+	margin-left: 170px;
 	margin-top: 450px;
 	position: absolute;
 	display: none;
@@ -547,9 +555,20 @@ section .works-block {
 	box-shadow: 0 0 20px 20px white;
 	color: #E58201;
 	font-weight: 900;
+	z-index: 2;
 }
 
-}
+.texts-work a:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(255,255,230,0.9); /* Полупрозрачный цвет фона */
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 2px double #FF2828;
+    left: 15px;
+   }
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
