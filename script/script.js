@@ -1,4 +1,4 @@
-if($(window).width() > 480) {
+if (window.matchMedia("(min-width: 400px)").matches) {
 $(function() {
 
  $(window).scroll(function() {
@@ -113,7 +113,7 @@ $(function() {
 		$('.award').fadeOut(300);
 	});
 });
-
+}
 $(function() {
 	$('#prog-1').mouseover(function() 
 	{
