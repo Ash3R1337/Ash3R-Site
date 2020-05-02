@@ -112,7 +112,7 @@ $(function() {
 		$('.award').fadeOut(300);
 	});
 });
-if (window.matchMedia("(min-width: 480px)").matches) {
+if (window.matchMedia("(min-width: 400px)").matches) {
 $(function() {
 	$('#prog-1').mouseover(function() 
 	{
@@ -196,4 +196,14 @@ $(function() {
 
 });
 
+}
+else {
+	$('#prog-1-1').hide();
+	$('#prog-1-2').hide();
+	$('#prog-1-3').hide();
+	$('#prog-1-4').hide();
+	$('#prog-1-5').hide();
+	$('#prog-1-6').hide();
+	$('#prog-1-7').hide();
+	$('#prog-1-8').hide();
 }
